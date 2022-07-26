@@ -11,12 +11,12 @@ if(isset($_POST["submit"])){
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'ponbaskar397@gmail.com';                 // SMTP username or ur mailid
-        $mail->Password = 'iambaskar1903';                           // SMTP password
+        $mail->Username = 'sender mail id';                 // SMTP username or ur mailid
+        $mail->Password = 'mail id password';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    
 
-        $mail->setFrom('ponbaskar397@gmail.com', 'baskar');
+        $mail->setFrom('your mail id', 'ur_name');
         $mail->addAddress($email);     // Add a recipient
        
        
